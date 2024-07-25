@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate IT</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=6gwMy8qlY6nG&format=png&color=ffffff"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1>Calculate IT!</h1>
+
+    <div class="main-body center-hv">
+      <input type="text" class="display-content" id="display" readonly />
+
+      <div class="btn-container">
+        <button type="button" onclick="clearDisplay()" class="btn-operator">
+          C
+        </button>
+        <button type="button" onclick="deleteChar()" class="btn-operator">
+          DEL
+        </button>
+        <button
+          type="button"
+          onclick="displayChar(value)"
+          value="%"
+          class="btn-operator"
+        >
+          %
+        </button>
+        <button
+          type="button"
+          onclick="displayChar(value)"
+          value="/"
+          class="btn-operator"
+        >
+          /
+        </button>
+        <button type="button" onclick="displayChar(value)" value="7">7</button>
+        <button type="button" onclick="displayChar(value)" value="8">8</button>
+        <button type="button" onclick="displayChar(value)" value="9">9</button>
+        <button
+          type="button"
+          onclick="displayChar(value)"
+          value="*"
+          class="btn-operator"
+        >
+          X
+        </button>
+        <button type="button" onclick="displayChar(value)" value="4">4</button>
+        <button type="button" onclick="displayChar(value)" value="5">5</button>
+        <button type="button" onclick="displayChar(value)" value="6">6</button>
+        <button
+          type="button"
+          onclick="displayChar(value)"
+          value="-"
+          class="btn-operator"
+        >
+          -
+        </button>
+        <button type="button" onclick="displayChar(value)" value="1">1</button>
+        <button type="button" onclick="displayChar(value)" value="2">2</button>
+        <button type="button" onclick="displayChar(value)" value="3">3</button>
+        <button
+          type="button"
+          onclick="displayChar(value)"
+          value="+"
+          class="btn-operator"
+        >
+          +
+        </button>
+        <button type="button" onclick="displayChar(value)" value="0">0</button>
+        <button type="button" onclick="displayChar(value)" value=".">.</button>
+        <button type="button" onclick="calculate()">=</button>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <p>@ 2024 Copyright: Rian Luis Mabait</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/javascript/index.js"></script>
+</html>
